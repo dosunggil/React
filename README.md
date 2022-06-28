@@ -20,8 +20,8 @@
 ## React project 시작하기
 * /workpace/React/create-react-app (프로젝트명)
 
-### react project clone 시에는
-* (터미널에서) yarn 
+### react project clone 시 (node_modules 파일 설치)
+* (터미널에서) yarn  
 
 
 ### project 시작
