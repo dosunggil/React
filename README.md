@@ -18,4 +18,5 @@
 * (cmd) npm install -g create-react-app
 
 ## React project 시작하기
-* /workpace/React/create-react-app 프로젝트명
+* /workpace/React/create-react-app (프로젝트명)
+* (터미널에서) yarn start
