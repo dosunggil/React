@@ -1,45 +1,16 @@
-# JavaScript Full Stack Project
-* nodejs.org 접속하여 nodejs 설치하기
-* cmd 관리자 권한으로 실행하기
+# 공공DB API 프로젝트
 
-## nodejs 보조 도구들 설치
-### nodemon : 소스코드 변경 시 자동 재실행 도구
-* 표준(Vanilla JS) 를 테스트 하기 위한 도구
-* (cmd) npm install -g nodemon
+- data.go.kr 의 기상청 기상특보 서비스를 활용한 App 제작
 
-### npm : nodejs project manager, dependency 설정
-* (cmd) npm install -g npm@8.13.1
+## React 에서 API 를 사용하기 위하여
 
-## react 프로젝트 보조 도구들 설치
-### create-react-app : react 프로젝트 초기 작성 template
-* (cmd) npm install -g create-react-app
+- data.go.kr : 대한민국 공공 DB 서비스 회원가입
+- 기상청 기상특보 할용 신청
+- Service 키 받기
 
-### yarn : npc 과 같은 역할
-* react 프로젝트에서는 npm 보다 yarn 을 더 많이 사용한다. 의존성 관리가 더 잘 된다.
-* (cmd) npm install -g yarn
+## React 의 CORS 문제 해결하기
 
-
-
-## React project 시작하기
-* vsCode 터미널에서 명령 실행
-* /workpace/React/ ```create-react-app (프로젝트명)```
-
-## vsCode 에서 터미널 열기
-* 메뉴에서 터미널/ 새 터미널 열기를 선택하면 project root(workspace) 에서 터미널 열기 : 새로운 프로젝트를 생성하기 위한 터미널 열기
-
-* 프로젝트 생성 후 프로젝트 폴더에서 마우스 우클릭하여 통합 터미널 열기 : 프로젝트를 시작하거나 Dependency 를 설치하기 위한 터미널 열기
-
-## 프로젝트 폴더에서 통합 터미널 열기 실행하여 작업 준비
-* dependency 를 한번 더 새롭게 업데이트 하기
-* yarn 또는 npm install
-
-
-
-
-
-### react project clone 시 (node_modules 파일 설치)
-* (터미널에서) yarn  
-
-
-### project 시작
-* (터미널에서) yarn start
+- yarn add http-proxy-middleware 설치
+- 현재 react 에서 가장 보편적으로 많이 사용하는 중간자 컴포넌트
+- 실제 localhost:3000 에서 apis.data.go.kr 로 요청을 보내면 CORS 오류가 나면서 요청이 거부된다.
+- 이때 http-proxy-middleware 가 중간에서 마치 localhost:3000 주소를 api.data.go.kr 에서 요청하는 것처럼 변경하여 상대방의 CORS 문제를 우회하여 요청한다.
